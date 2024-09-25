@@ -24,6 +24,8 @@ function App() {
           <WeatherStats/> {/* this is the part thet shows temperature */}
           <AirQuality/> {/* this is the part thet shows air quality */}
 
+          {/* This is a test comment by ABU */}
+
         </div>
         <div /* Right section of the main screen. make the glassmorphism normal */ >
           <Forecast/> {/* Thsi part shows the weather type in english */}
