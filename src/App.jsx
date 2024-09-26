@@ -1,40 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Final from './components/final'
-import Header from './components/header'
-import WeatherStats from './components/WeatherStats'
-import AirQuality from './components/AirQuality'
-import Forecast from './components/Forecast'
-import CityForecastList from './components/CityForecastList'
-import Footer from './components/Footer'
-import TemperatureGraph from './components/TemperatureGraph'
-import BackgroundImage from './components/BackgroundImage'
+import React from 'react'
+import Location from './components/Location'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header/>{/* the header file would contain the written word weather app */}
-      <div /* mainScreen give bgImage according to weather in this*/>
-        <div /* left part of the main screen. make the glassmorphism more opaque in this section */>
-          <Location/>  {/* this is the search bar of the left section!! */}
-          <WeatherStats/> {/* this is the part thet shows temperature */}
-          <AirQuality/> {/* this is the part thet shows air quality */}
+    <div className='w-full h-screen bg-zinc-800 flex justify-center items-center'>
+      <div className='w-[75%] h-[80%] rounded-3xl bg-[url("src/assets/DarkClouds.jpg")] bg-center bg-cover flex overflow-hidden'>
+        <div className='right flex-row h-full w-full bg-white bg-opacity-30 backdrop-blur-sm'>
+          <div className='left flex-row h-full w-[25%] backdrop-blur-sm backdrop-opacity-30 border-r-[1px] border-[rgba(255,255,255,0.3)] px-9 py-12'>
+            <Location/>
+          </div>
 
-          {/* This is a test comment by ABU */}
-
-        </div>
-        <div /* Right section of the main screen. make the glassmorphism normal */ >
-          <Forecast/> {/* Thsi part shows the weather type in english */}
-          <TemperatureGraph/> {/* This creates the graph of the temperature for the entire day */}
-          <CityForecastList/> {/* This shows the temperature of the recent searched places */}
         </div>
       </div>
-      <Footer/>
-    </>
+    </div>
   )
 }
 
