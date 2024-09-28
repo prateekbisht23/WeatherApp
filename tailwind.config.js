@@ -15,8 +15,8 @@ export default {
         'text-1' : 'rgb(205, 205, 205)',
         'text-2' : 'rgb(255, 255, 255)',
       },
-      shadow: {
-        'custom-shadow': '0px 8px 30px rgba(0, 0, 0, 0.25)',
+      boxShadow: {
+        'colored': '0 0 2px rgb(255,229,132)', // Customize the color and opacity
       },
     },
   },
