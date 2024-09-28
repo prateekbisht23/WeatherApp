@@ -1,5 +1,6 @@
 import React from 'react'
 import Location from './components/Location'
+import Header from './components/Header'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <div className='right flex-row h-full w-full bg-white bg-opacity-30 backdrop-blur-sm'>
           <div className='left flex-row h-full w-[25%] backdrop-blur-sm backdrop-opacity-30 border-r-[1px] border-[rgba(255,255,255,0.3)] px-9 py-12'>
             <Location/>
+            <Header />
           </div>
 
         </div>
