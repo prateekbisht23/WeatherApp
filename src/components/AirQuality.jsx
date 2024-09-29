@@ -2,7 +2,7 @@ import React from "react";
 
 const AirQuality = () => {
     return(
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2">
             <div className="flex flex-row justify-between ">
                 <div className="relative top-1">
                     <span className="absolute left-0 rounded-[100%] h-[20px] w-[20px] shadow-colored bg-[rgb(235,67,70)]"></span>
@@ -16,7 +16,7 @@ const AirQuality = () => {
                     <span className="text-white text-xl font-extralight tracking-widest">0.8%</span>
                 </div>
             </div>
-            <div className="flex flex-row text-[12px] text-white justify-between">
+            <div className="flex flex-row text-[10px] font-extralight text-white justify-between">
                 <div className="flex flex-col">
                     <span className="mb-2">Safe</span>
                     <div className="flex flex-row items-center gap-1">
