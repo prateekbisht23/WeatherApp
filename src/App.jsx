@@ -27,6 +27,5 @@ function App() {
   )
 }
 
-{/* 30th Sep */}
 
 export default App
