@@ -4,7 +4,7 @@ const Head = () => {
   return (
     <div className='text-gray-100 font-thin text-lg flex justify-between w-full'>
       <div>Weather Dashboard</div>
-      <div>2024</div>
+      <div>2025</div>
     </div>
   )
 }
